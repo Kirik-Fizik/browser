@@ -1,0 +1,118 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-image: url(back_red.png);
+    background-attachment: fixed;
+    background-size: 100% ;
+}
+
+
+.header__title {
+    margin: .5em;
+    color: white;
+}
+
+.spisok {
+    position: absolute;
+    top: 7em;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: .8rem;
+}
+.spisok > div {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: .2em;
+    border-radius: .5em;
+    transition: .2s;
+}
+@media(min-width: 450px) {
+    .spisok > div {
+        font-size: 1.3rem;
+    }
+}
+.spisok > div:hover {
+    transform: scale(.95);
+    cursor: pointer;
+}
+
+.poisk {
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.poisk__input {
+    font-size: .8rem;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: .6em;
+    border: 1px solid rgb(121, 121, 121);
+    padding: .5em .2em .5em .2em;
+}
+@media(min-width: 450px) {
+    .poisk__input {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+}
+.poisk__input:focus {
+    outline: 1px solid rgb(0, 0, 0);
+}
+.poisk__image {
+    width: 50%;
+}
+@media(min-width: 450px) {
+    .poisk__image {
+        width: 30%;
+    }
+}
+
+.choose__colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.choose__colors > div {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    margin: .5em
+}
+.choose__colors > div:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+.choose__title {
+    color: white;
+    margin: .5em;
+    margin-top: 4em;
+    background-color: black;
+    display: inline-block;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.pink {
+    background-color: pink;
+}
+.green {
+    background-color: green;
+}
